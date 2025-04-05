@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "af30525b70a751de22b20ae751752e83"
+application_url = "https://t4fuo3x065.execute-api.sa-east-1.amazonaws.com/dev/install"
+embedded = true
+name = "zendra"
+handle = "zendra"
+
+[build]
+include_config_on_deploy = true
+dev_store_url = "quickstart-5000816f.myshopify.com"
+automatically_update_urls_on_dev = false
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products,read_orders,write_orders,read_channels,read_customers,read_customer_events,read_content,read_store_credit_accounts,read_metaobject_definitions,read_order_edits,read_metaobjects,read_shipping,read_script_tags,read_product_feeds,read_packing_slip_templates,read_online_store_navigation,read_shopify_payments_payouts,read_assigned_fulfillment_orders,read_third_party_fulfillment_orders,read_merchant_managed_fulfillment_orders,read_draft_orders,read_payment_customizations,read_legal_policies,read_product_listings,read_online_store_pages,read_fulfillments,read_locations,read_payment_terms,read_custom_fulfillment_services,read_privacy_settings,read_assigned_fulfillment_orders,write_content,write_products"
+
+[auth]
+redirect_urls = [
+  "https://t4fuo3x065.execute-api.sa-east-1.amazonaws.com/dev/callback"
+]
